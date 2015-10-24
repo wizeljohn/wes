@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css" />
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+	<script src="js/responsiveImg.js"></script>
+	
+	<script>
+		$("#banner").responsiveImg();
+	</script>
+</head>
+
+<body> 
+	<!--======================================================================
+		S T A R T    P A G E   F O R   L O G I N
+	=======================================================================-->
+	<div data-role="page" data-theme="d" id="pgLogin">
+		<div data-role="navbar">
+			<ul>
+				<!--==== L I N K   F O R   C A T E G O R Y  ===-->				
+				<li><a href="#pgLogin"><span class="fa fa-unlock fa-pull-center fa-2x"></span> LOGIN</a></li>
+
+				<!--==== L I N K   F O R   D A S H B O A R D  ===-->
+				<li><a href="#pgSignup"><span class="fa fa-user-plus fa-pull-center fa-2x"></span> SIGNUP</a></li>
+				
+			</ul>
+		</div>
+
+		
+		<img src="image/hala2016_cover.jpg" class="img-thumbnail" alt="banner" id="banner" style="max-width:100%;max-height:100%;">
+		
+		<div data-role="content">
+			
+			<form>
+				<input type="text" placeholder="Email"/>
+				<input type="password" placeholder="Password"/>
+			</form>
+			<br>
+			<center>
+			<button data-theme="a">Login</button>
+			<label><input type="checkbox">Remember Me</label>
+			<a data-theme="a" href="home.html" id="skipLogin">Skip for Now</a>
+			</center>
+			<script>
+				$(document).ready(function(){
+					$('#skipLogin').click(function(){
+						alert('You can disable the login prompt permanantely from preferences. Login is also available under preferences.');
+					});
+				});
+			</script>
+		</div>
+	</div>
+	<!--======================================================================
+		S T A R T    P A G E   F O R   S I G N U P 
+	=======================================================================-->
+	<div data-role="page" data-theme="d" id="pgSignup">
+		<div data-role="navbar">
+			<ul>
+				<!--==== L I N K   F O R   C A T E G O R Y  ===-->				
+				<li><a href="#pgLogin"><span class="fa fa-unlock fa-pull-center fa-2x"></span> LOGIN</a></li>
+
+				<!--==== L I N K   F O R   D A S H B O A R D  ===-->
+				<li><a href="#pgSignup"><span class="fa fa-user-plus fa-pull-center fa-2x"></span> SIGNUP</a></li>
+			</ul>
+		</div>
+
+		<img src="image/hala2016_cover.jpg" class="img-thumbnail" alt="banner" id="banner" style="max-width:100%;max-height:100%;">
+
+		<div data-role="content">
+			<form>
+				<input type="text" placeholder="Name"/>
+				<input type="email" placeholder="Email"/>
+				<input type="password" placeholder="Password"/>
+				<input type="password" placeholder="Confirm Password"/>
+			</form>
+			<br>
+			<center>
+			<button data-theme="a">Sign up</button>
+			<label><input type="checkbox">Agree</label>
+			<a data-theme="a" href="home.html" id="skipSignup">Skip for Now</a>
+			</center>
+			<script>
+				$(document).ready(function(){
+					$('#skipSignup').click(function(){
+						alert('Skip login ndi ka makakapag sync ng data');
+					});
+				});
+			</script>
+		</div>
+	</div>		
+</body>
+</html>

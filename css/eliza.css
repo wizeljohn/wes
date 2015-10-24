@@ -1,0 +1,80 @@
+#logo{
+			width:30%;
+			height:8%;
+		}
+		#btncss{
+			width: 50%;
+		}
+		#fldgroup{
+			background: #e6e6e6;
+			color: #363636;
+		}
+		#imgLogo{
+			position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width : 60%;
+            height : 60%;
+		}
+		#s{
+			color:red;
+		}
+
+
+	#cssMobile{
+	color:#1F5DAC;
+	}
+	#cssComputer{
+		color:#FF4B1B;
+	}
+	#cssShoes{
+		color:#D10F2E;
+	}
+	#cssAppliance{
+		color:#85E819;
+	}
+	#cssCamera{
+		color:#AF13A8;
+	}
+	#cssCloth{
+		color:#D3177A;
+	}
+	#cssWathes{
+		color:#14B764;
+	}
+	#cssBook{
+		color:#E27B00;
+	}
+	#cssOther{
+		color:#898292;
+	}
+	#cssFood{
+		color:#129AA0;
+	} 
+	#pgIndex{
+		background-image: url("css/bg.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		}
+
+		#pgCategory{
+		background-image: url("css/bg.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		}
+
+	#styleHR{
+		color:red;
+	}
+
+	#fldset{
+		border-style: solid;
+    	border-width: 3px;
+	}
